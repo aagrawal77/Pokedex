@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class CategorySearchActivity extends AppCompatActivity {
+public class Ignore extends AppCompatActivity {
 
     String type1;
     String type2;
@@ -94,7 +94,7 @@ public class CategorySearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 filter();
-                Intent intent = new Intent(CategorySearchActivity.this, MainActivity.class);
+                Intent intent = new Intent(Ignore.this, MainActivity.class);
                 intent.putExtra("key", "category");
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("list", filtered);
